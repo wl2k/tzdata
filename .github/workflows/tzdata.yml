@@ -23,3 +23,6 @@ jobs:
         echo "${{ needs.cmp.outputs.version }}" > VERSION
       commit_message: "feat: bump tzdata to ${{ needs.cmp.outputs.version }}"
       tagging_message: ${{ needs.cmp.outputs.version }}
+
+  keep-scheduled-workflow-activity:
+    uses: WaterLemons2k/scheduled-workflow-activity-action/.github/workflows/reusable.yml@v1
