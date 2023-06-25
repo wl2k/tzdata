@@ -11,7 +11,12 @@ jobs:
     uses: WaterLemons2k/.github/.github/workflows/compare.yml@main
     with:
       new: $(sudo apt-get install tzdata | grep '[(-]' | awk -F '[(-]' '{print $2}')
-          
+
+  keep-scheduled-workflow-activity:
+    needs: cmp
+    if: needs.cmp.outputs.changed == 'false'
+    uses: WaterLemons2k/scheduled-workflow-activity-action/.github/workflows/reusable.yml@v1
+
   tzdata:
     needs: cmp
     if: needs.cmp.outputs.changed == 'true'
@@ -23,6 +28,3 @@ jobs:
         echo "${{ needs.cmp.outputs.version }}" > VERSION
       commit_message: "feat: bump tzdata to ${{ needs.cmp.outputs.version }}"
       tagging_message: ${{ needs.cmp.outputs.version }}
-
-  keep-scheduled-workflow-activity:
-    uses: WaterLemons2k/scheduled-workflow-activity-action/.github/workflows/reusable.yml@v1
