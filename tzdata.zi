@@ -1,4 +1,4 @@
-# version 2024b
+# version 2025b
 # ddeps backzone zone.tab
 # This zic input file is in the public domain.
 R d 1916 o - Jun 14 23s 1 S
@@ -722,12 +722,16 @@ R P 2085 o - Ap 21 2 0 -
 R P 2085 o - Jun 9 2 1 S
 R P 2086 o - Ap 13 2 0 -
 R P 2086 o - May 25 2 1 S
-R PH 1936 o - N 1 0 1 D
-R PH 1937 o - F 1 0 0 S
-R PH 1954 o - Ap 12 0 1 D
-R PH 1954 o - Jul 1 0 0 S
-R PH 1978 o - Mar 22 0 1 D
-R PH 1978 o - S 21 0 0 S
+R PH 1936 o - O 31 24 1 D
+R PH 1937 o - Ja 15 24 0 S
+R PH 1941 o - D 15 24 1 D
+R PH 1945 o - N 30 24 0 S
+R PH 1954 o - Ap 11 24 1 D
+R PH 1954 o - Jun 4 24 0 S
+R PH 1977 o - Mar 27 24 1 D
+R PH 1977 o - S 21 24 0 S
+R PH 1990 o - May 21 0 1 D
+R PH 1990 o - Jul 28 24 0 S
 R S 1920 1923 - Ap Su>=15 2 1 S
 R S 1920 1923 - O Su>=1 2 0 -
 R S 1962 o - Ap 29 2 1 S
@@ -1726,7 +1730,7 @@ R Y 1972 2006 - O lastSu 2 0 S
 R Y 1987 2006 - Ap Su>=1 2 1 D
 R Yu 1965 o - Ap lastSu 0 2 DD
 R Yu 1965 o - O lastSu 2 0 S
-R m 1931 o - April 30 0 1 D
+R m 1931 o - Ap 30 0 1 D
 R m 1931 o - O 1 0 0 S
 R m 1939 o - F 5 0 1 D
 R m 1939 o - Jun 25 0 0 S
@@ -2020,9 +2024,9 @@ R y 2002 2004 - Ap Su>=1 0 0 -
 R y 2002 2003 - S Su>=1 0 1 -
 R y 2004 2009 - O Su>=15 0 1 -
 R y 2005 2009 - Mar Su>=8 0 0 -
-R y 2010 ma - O Su>=1 0 1 -
+R y 2010 2024 - O Su>=1 0 1 -
 R y 2010 2012 - Ap Su>=8 0 0 -
-R y 2013 ma - Mar Su>=22 0 0 -
+R y 2013 2024 - Mar Su>=22 0 0 -
 R PE 1938 o - Ja 1 0 1 -
 R PE 1938 o - Ap 1 0 0 -
 R PE 1938 1939 - S lastSu 0 1 -
@@ -2542,7 +2546,8 @@ Z America/Asuncion -3:50:40 - LMT 1890
 -3:50:40 - AMT 1931 O 10
 -4 - %z 1972 O
 -3 - %z 1974 Ap
--4 y %z
+-4 y %z 2024 O 15
+-3 - %z
 Z America/Atikokan -6:6:28 - LMT 1895
 -6 C C%sT 1940 S 29
 -6 1 CDT 1942 F 9 2s
@@ -2644,6 +2649,20 @@ Z America/Ciudad_Juarez -7:5:56 - LMT 1922 Ja 1 7u
 Z America/Costa_Rica -5:36:13 - LMT 1890
 -5:36:13 - SJMT 1921 Ja 15
 -6 CR C%sT
+Z America/Coyhaique -4:48:16 - LMT 1890
+-4:42:45 - SMT 1910 Ja 10
+-5 - %z 1916 Jul
+-4:42:45 - SMT 1918 S 10
+-4 - %z 1919 Jul
+-4:42:45 - SMT 1927 S
+-5 x %z 1932 S
+-4 - %z 1942 Jun
+-5 - %z 1942 Au
+-4 - %z 1946 Au 28 24
+-5 1 %z 1947 Mar 31 24
+-5 - %z 1947 May 21 23
+-4 x %z 2025 Mar 20
+-3 - %z
 Z America/Creston -7:46:4 - LMT 1884
 -7 - MST 1916 O
 -8 - PST 1918 Jun 2
@@ -3545,10 +3564,10 @@ Z Asia/Makassar 7:57:36 - LMT 1920
 8 - %z 1942 F 9
 9 - %z 1945 S 23
 8 - WITA
-Z Asia/Manila -15:56 - LMT 1844 D 31
-8:4 - LMT 1899 May 11
-8 PH P%sT 1942 May
-9 - JST 1944 N
+Z Asia/Manila -15:56:8 - LMT 1844 D 31
+8:3:52 - LMT 1899 S 6 4u
+8 PH P%sT 1942 F 11 24
+9 - JST 1945 Mar 4
 8 PH P%sT
 Z Asia/Muscat 3:54:24 - LMT 1920
 4 - +04
@@ -3700,7 +3719,7 @@ Z Asia/Tbilisi 2:59:11 - LMT 1880
 Z Asia/Tehran 3:25:44 - LMT 1916
 3:25:44 - TMT 1935 Jun 13
 3:30 i %z 1977 O 20 24
-4 i %z 1979
+4 i %z 1978 N 10 24
 3:30 i %z
 Z Asia/Thimphu 5:58:36 - LMT 1947 Au 15
 5:30 - %z 1987 O
@@ -3858,11 +3877,6 @@ Z Australia/Perth 7:43:24 - LMT 1895 D
 Z Australia/Sydney 10:4:52 - LMT 1895 F
 10 AU AE%sT 1971
 10 AN AE%sT
-Z CET 1 c CE%sT
-Z CST6CDT -6 u C%sT
-Z EET 2 E EE%sT
-Z EST -5 - EST
-Z EST5EDT -5 u E%sT
 Z Etc/GMT 0 - GMT
 Z Etc/GMT+1 -1 - %z
 Z Etc/GMT+10 -10 - %z
@@ -4285,7 +4299,6 @@ Z Europe/Zurich 0:34:8 - LMT 1853 Jul 16
 1 CH CE%sT 1981
 1 E CE%sT
 Z Factory 0 - -00
-Z HST -10 - HST
 Z Indian/Antananarivo 3:10:4 - LMT 1911 Jul
 3 - EAT 1954 F 27 23s
 3 1 EAST 1954 May 29 23s
@@ -4312,10 +4325,6 @@ Z Indian/Mayotte 3:0:56 - LMT 1911 Jul
 3 - EAT
 Z Indian/Reunion 3:41:52 - LMT 1911 Jun
 4 - +04
-Z MET 1 c ME%sT
-Z MST -7 - MST
-Z MST7MDT -7 u M%sT
-Z PST8PDT -8 u P%sT
 Z Pacific/Apia 12:33:4 - LMT 1892 Jul 5
 -11:26:56 - LMT 1911
 -11:30 - %z 1950
@@ -4468,7 +4477,6 @@ Z Pacific/Wake 11:6:28 - LMT 1901
 12 - +12
 Z Pacific/Wallis 12:15:20 - LMT 1901
 12 - +12
-Z WET 0 E WE%sT
 L Etc/GMT GMT
 L Australia/Sydney Australia/ACT
 L Australia/Lord_Howe Australia/LHI
@@ -4484,6 +4492,8 @@ L America/Rio_Branco Brazil/Acre
 L America/Noronha Brazil/DeNoronha
 L America/Sao_Paulo Brazil/East
 L America/Manaus Brazil/West
+L Europe/Brussels CET
+L America/Chicago CST6CDT
 L America/Halifax Canada/Atlantic
 L America/Winnipeg Canada/Central
 L America/Toronto Canada/Eastern
@@ -4495,6 +4505,9 @@ L America/Whitehorse Canada/Yukon
 L America/Santiago Chile/Continental
 L Pacific/Easter Chile/EasterIsland
 L America/Havana Cuba
+L Europe/Athens EET
+L America/Panama EST
+L America/New_York EST5EDT
 L Africa/Cairo Egypt
 L Europe/Dublin Eire
 L Etc/GMT Etc/GMT+0
@@ -4517,6 +4530,9 @@ L America/Jamaica Jamaica
 L Asia/Tokyo Japan
 L Pacific/Kwajalein Kwajalein
 L Africa/Tripoli Libya
+L Europe/Brussels MET
+L America/Phoenix MST
+L America/Denver MST7MDT
 L America/Tijuana Mexico/BajaNorte
 L America/Mazatlan Mexico/BajaSur
 L America/Mexico_City Mexico/General
@@ -4589,6 +4605,7 @@ L Europe/Kyiv Europe/Uzhgorod
 L Europe/Kyiv Europe/Zaporozhye
 L Pacific/Kanton Pacific/Enderbury
 L Pacific/Honolulu Pacific/Johnston
+L Europe/Lisbon WET
 L America/Nuuk America/Godthab
 L Asia/Ashgabat Asia/Ashkhabad
 L Asia/Kolkata Asia/Calcutta
@@ -4605,6 +4622,8 @@ L Asia/Ulaanbaatar Asia/Ulan_Bator
 L Atlantic/Faroe Atlantic/Faeroe
 L Europe/Kyiv Europe/Kiev
 L Asia/Nicosia Europe/Nicosia
+L Pacific/Honolulu HST
+L America/Los_Angeles PST8PDT
 L Africa/Asmara Africa/Asmera
 L Africa/Bamako Africa/Timbuktu
 L America/Atikokan America/Coral_Harbour

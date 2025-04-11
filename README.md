@@ -1,6 +1,6 @@
 # [tzdata](https://www.iana.org/time-zones)
 Time Zone files for Linux  
-Version: 2024b
+Version: 
 # Example
 ```bash
 $ date
