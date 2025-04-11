@@ -13,7 +13,7 @@ jobs:
       pre: |
         echo 'deb [trusted=yes] http://deb.debian.org/debian/ testing main' | sudo tee /etc/apt/sources.list
         sudo apt-get update
-      new: $(sudo apt-get install tzdata | awk '/G/ {split($7, a, "-"); print a[1]}; exit')
+      new: $(sudo apt-get install tzdata | awk '/G/ {split($7, a, "-"); print a[1]; exit}')
       artifact-name: tzdata
       artifact-path: /usr/share/zoneinfo
 
